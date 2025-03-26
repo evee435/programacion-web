@@ -1,0 +1,32 @@
+.block {
+    display: block;
+    width: 200px;
+    background-color: tomato;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.inline {
+    display: inline;
+    background-color: blue;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: rgb(18, 139, 83);
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color:aqua ;
+    padding: 10px;
+}
+.flex-item {
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 5px;
+}
