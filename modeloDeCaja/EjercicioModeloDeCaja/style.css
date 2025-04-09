@@ -1,6 +1,15 @@
-.bloque {
+.bloque{ /*clase*/
 display: block;
 background-color: crimson;
 padding: 10px;
 margin: 10px;
+}
+body { /*etiqueta de html*/
+    display:flex ;
+    justify-content: center;
+    background-color: rgb(18, 66, 226);
+}
+.contenedor { 
+background-color: rgb(109, 152, 243);
+padding: 20px;
 }
