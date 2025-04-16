@@ -1,5 +1,12 @@
+.header{
+    text-align: center;
+}
 body{
-    background-image: url("");
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FYu5URkKWdtdPgjA0W3Vrp07IewY%3D%2F0x146%3A2040x1214%2Ffit-in%2F1200x630%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F24039176%2Fjlee_220920_1001_pkmnscvi_dex.jpg&f=1&nofb=1&ipt=6edcd52b671067035b365bb22d5f0312b5de7247be597da9f5ceb4accc0aa160");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 .grilla{
     display: grid;
@@ -7,11 +14,35 @@ body{
    /* grid-template-columns: (3, 200px);*/
     grid-template-columns: repeat(3, 1fr); /*fr es una faccion y divide la pagina en la 
     cantidad que diga el primer valor de la funcion*/
+  /*  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
     grid-auto-rows: auto;
+    gap: 10px;
+    text-align: center;
+
+}
+.block1{
+    background-color: aqua;
+
+}.block2{
+    background-color: rgb(0, 60, 255);
+}
+.block3{
+    background-color: rgb(219, 89, 219);
 }
 img{ 
     width: 100%;
     object-fit: cover; /*para rellenar el contenedor donde se ubica*/
-    aspect-ratio: 1/1; /**modifica la relacion de aspecto de la foto, alinea. 1/1 cuadrados
-    1/2 carteles de cine/
+    aspect-ratio: 1/1; /*modifica la relacion de aspecto de la foto, alinea. 1/1 cuadrados
+    1/2 carteles de cine*/
+}
+
+@media (max-width:1024px){
+    .grilla{
+        grid-template-columns: repeat(2, 1fr); /*cuando haya 768 o menos se hace una columna*/
+    }
+}
+@media(max-width:768px){
+    .grilla{
+        grid-template-columns: 1fr;
+    }
 }
