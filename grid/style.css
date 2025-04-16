@@ -1,0 +1,17 @@
+body{
+    background-image: url("");
+}
+.grilla{
+    display: grid;
+    /*grid-template-columns:200px 200px 200px ;*/
+   /* grid-template-columns: (3, 200px);*/
+    grid-template-columns: repeat(3, 1fr); /*fr es una faccion y divide la pagina en la 
+    cantidad que diga el primer valor de la funcion*/
+    grid-auto-rows: auto;
+}
+img{ 
+    width: 100%;
+    object-fit: cover; /*para rellenar el contenedor donde se ubica*/
+    aspect-ratio: 1/1; /**modifica la relacion de aspecto de la foto, alinea. 1/1 cuadrados
+    1/2 carteles de cine/
+}
