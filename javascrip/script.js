@@ -53,7 +53,7 @@ console.log(saludar("eve"));
 const saludo= (nombre) => `hola ${nombre}`;
 //si el return implicito tiene mas de una linea va estar envuelto en parentesis
 
-//arreglos o arrays (listas en python)
+//arreglos o arrays (listas en python) pero no todas ls listas son arrays
 const miArreglo = [1, 2, "pepito", true];
 console.log(miArreglo[2]);
 
@@ -65,6 +65,47 @@ const miObjeto= {
 console.log(miObjeto.edad);
 
 //iteramos una lista con for 
-for(let i=0; i < miArreglo, length; i++){
+for(let i=0; i < miArreglo.length; i++){
     console.log(miArreglo[i]) //imprimi en pantalla el arreglo con su posicion
 }
+
+//metodos de aarreglo
+//length --> longitud del arreglo
+const longitud = miArreglo.length;
+console.log(longitud);
+
+//push (valor) agrega un elemento al final 
+//equivalente al append del python, solo funciona con arreglas
+miArreglo.push("celeste")
+console.log("cadena", miArreglo);
+
+//pop() elimina el ultimo elemento de un arreglo
+//si queremos lo podemos guardar en una variable
+const ultimo = miArreglo.pop();
+console.log("ultimo", ultimo);
+
+//shift() elimina el primer valor de un arreglo, tambien lo guarda
+const primero= miArreglo.shift();
+console.log(primero);
+
+//unshift(valor) agrega un elemento al principio del arreglo
+miArreglo.unshift("eve");
+console.log(miArreglo);
+
+//forEach
+//SOLO RECORRE, no guarda los valores en ningun lado 
+miArreglo.forEach( (item, index, miArregloEntero) => { //recorre cada elemento y lo muestra
+    console.log("index", index, "elemento", item, "mi arreglo entero", miArregloEntero)
+})
+
+//map recorre el arreglo, lo modifica con una funcion y nos devuelve uno nuevo
+const nuevoArreglo = miArreglo.map((item, index) => {
+    const num= 2
+    return (item += num);
+});
+
+console.log("nuevo arreglo", nuevoArreglo);
+//filter crea un nuevo array a aprtir de los elementos que cumplan la condicion
+const miArregloNum= [2, 4, 5, 6]
+const pares= miArregloNum.filter((item) => item % 2 ===0);
+console.log(pares);

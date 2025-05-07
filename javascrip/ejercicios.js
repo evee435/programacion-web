@@ -1,4 +1,4 @@
-const num= 0;
+/*const num= 0;
 if(num <0){
    console.log("negativo")
 }
@@ -21,4 +21,32 @@ for(let i= 1; i<=10; i++){
         console.log(i, suma);
         console.log(suma)
     }
+}*/
+const productos= []
+
+const producto1 = {
+    nombre:"uñas",
+    precio: 12000,
+    categoria:"belleza",
+};
+const producto2 = {
+    nombre:"zapatillas",
+    precio:180000,
+    categoria:"indumentaria",
+};
+const producto3 = {
+    nombre:"coca cola",
+    precio:2800,
+    categoria:"bebidas",
+};
+const producto4 = {
+    nombre:"licuadora",
+    precio:80000,
+    categoria:"electro",
 }
+productos.push( producto1, producto2, producto3, producto4 )
+console.log(productos)
+
+productos.forEach(() => {
+    
+})
