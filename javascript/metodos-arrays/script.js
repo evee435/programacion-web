@@ -10,3 +10,4 @@ console.log("cadena", arreglo);
 //si queremos lo podemos guardar en una variable
 const ultimo = arreglo.pop();
 console.log("ultimo", ultimo);
+ 
