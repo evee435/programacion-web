@@ -99,13 +99,14 @@ miArreglo.forEach( (item, index, miArregloEntero) => { //recorre cada elemento y
 })
 
 //map recorre el arreglo, lo modifica con una funcion y nos devuelve uno nuevo
+//modifica los elementos del array con funcion 
 const nuevoArreglo = miArreglo.map((item, index) => {
     const num= 2
     return (item += num);
 });
 
 console.log("nuevo arreglo", nuevoArreglo);
-//filter crea un nuevo array a aprtir de los elementos que cumplan la condicion
+//filter crea un nuevo array a apartir de los elementos que cumplan la condicion
 const miArregloNum= [2, 4, 5, 6]
 const pares= miArregloNum.filter((item) => item % 2 ===0);
 console.log(pares);
