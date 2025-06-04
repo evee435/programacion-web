@@ -1,30 +1,24 @@
-const alumnos = [
-    {nombre: "Ana", edad: 28, nota: 8},
-    {nombre: "Luis", edad: 17, nota: 5},
-    {nombre: "Carla", edad: 22, nota: 9}
+//ejercicio 1
+//punto a
+const productos = [
+  { nombre: "Notebook", precio: 800 },
+  { nombre: "Celular", precio: 500 },
+  { nombre: "Teclado", precio: 50 },
 ];
-console.log(alumnos);
-
-const sorteo = 80
-if (sorteo != 80 ){
-    console.log("no quedaste dentro")
-}
-else {
-    console.log("ganaste el sorteo")
-}
-
-alumnos.forEach((alumno) => {
-    if (alumno.nota >= 6) {
-    console.log("el alumno aprobo");
+productos.forEach((productos)=>{
+    if (productos.precio >= 300){
+        console.log("el producto es caro")
     }
-    else
-     {
-        console.log("el alumno reprobo")
+    else {
+        console.log("el producto es barato")
     }
-
 })
-const mayoresDeEdad = alumnos.filter((alumno)=> alumno.edad >= 18 );
-console.log(mayoresDeEdad);
+//punto b
+//const obtenerPrecioPromedio = productos.precio 
 
-const nombreMayus = alumnos.map((alumno)=> alumno.nombre.toUpperCase());
-console.log(nombreMayus);
+//ejercicio 2
+const productosMayor = productos.filter((producto)=> producto.precio >= 100)
+console.log(productosMayor)
+
+const productoMin = productos.map((producto)=> producto.nombre.toLowerCase() ) 
+console.log(productoMin)
