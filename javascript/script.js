@@ -27,7 +27,7 @@ miVariable2= 'pueden ser re-escritos sus valores'
  
  //condicionales
  //if
- const edad=20
+ const edad=17
  if (edad >18){
     console.log('sos mayor de edad');//muestra en consola, print en python
  }
