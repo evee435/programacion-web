@@ -27,6 +27,12 @@ PROPS son valores que le podemos pasar a los componentes para que realize alguna
 usamos la llave {} para que no lo tome como texto plano
 HOOCKS = ganchos son para hacer una funcionalidad 
 arrancan con las palabras "use" y arranca en minuscula
-useEffect = ejecuta el codigo que se encuentra dentro, tantas veces como se actualizen sus dependencias, sino hay dependencias se ejecuta solo antes del rpimer renderizado
+useEffect = ejecuta el codigo que se encuentra dentro, tantas veces como se actualizen sus dependencias, sino hay dependencias se ejecuta solo antes del primer renderizado
 [] si estan vacios se ejecuta una vez
 useState tiene una variable y tiene una version actualizada
+
+25/06
+pasamos la funcion pero no la ejecucion de la funcion
+pasar la funcion sin parentesis 
+value valor por 
+setNombre 
