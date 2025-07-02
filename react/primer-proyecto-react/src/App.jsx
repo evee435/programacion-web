@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './App.css'
+import Contador from './components/actividades/ejercicios';
 
 function App() {
   const [nombre, setNombre] = useState("");
@@ -22,6 +23,7 @@ function App() {
   <button onClick={handleClick}>Mostrar</button>
   {nombre &&  <h2>{nombre}</h2>}
   {nombre === ''? <>hola</> : <>chau</>}
+  <Contador/>
 
   </>);
 }
