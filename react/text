@@ -1,3 +1,4 @@
+REACT
 los componentes cuando se declaran siempre arrancan con mayuscula y se retonan con estetica
 lo que retorna es como en html
 JSX ahora tienen una nueva extension, nuevos archivos
@@ -9,11 +10,11 @@ react
 javascriptX
 
 <!--no se toca el index.html por que se rompe, es lo que levanta la pagina, tampoco se toca main.jsx es raro que contenga codigo dentro
-<!-package.json le dice a react como se tiene q armar, si no hay no anda, info interna importante
-<!-eslint.config.js puramente desarrollo, no da errores
-<!-gitignore ignora todo lo que no queremos que se suba al github
+<!-package.json = le dice a react como se tiene q armar, si no hay no anda, info interna importante
+<!-eslint.config.js = puramente desarrollo, no da errores
+<!-gitignore = ignora todo lo que no queremos que se suba al github
 <!-en el readme hay datos
-package.json le dice a react como se tiene q armar, si no hay no anda, info interna importante
+package.json = le dice a react como se tiene q armar, si no hay no anda, info interna importante
 /utilidades o unidades que nosotros, nos ayuda a relacionar y la otra te ayuda a
 dos tipos de dependencias uno para el usuario y otro ayuda pagina 
 
@@ -22,8 +23,7 @@ css global o generico definimos colores, padding, etc. se importa en main
 export no nombrado o default
 export nombrado
 si tiene {} no te deja renombrar el archivo, si no tiene si te deja renombrarlo sin importar su ruta
-export default = {}
-PROPS son valores que le podemos pasar a los componentes para que realize alguna accion 
+PROPS = son valores que le podemos pasar a los componentes para que realize alguna accion 
 usamos la llave {} para que no lo tome como texto plano
 HOOCKS = ganchos son para hacer una funcionalidad 
 arrancan con las palabras "use" y arranca en minuscula
@@ -36,4 +36,6 @@ pasamos la funcion pero no la ejecucion de la funcion
 pasar la funcion sin parentesis 
 value valor por 
 setNombre 
-2/07
+13/8
+enter para seguir
+context, la informacion pasara a quien quieras directamente sin necesidad de pasar por todos
