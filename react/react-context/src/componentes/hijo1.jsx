@@ -1,6 +1,6 @@
 import { Hijo2 } from "./hijo2";
 
-export function hijo1({nombre}){
+export function Hijo1({nombre}){
     return(
         <>
         <h2>Hijo1</h2>
